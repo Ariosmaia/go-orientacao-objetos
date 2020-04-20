@@ -16,10 +16,3 @@ func main() {
 	fmt.Println(contaDoGustavo)
 
 }
-
-// Nessa aula:
-// Criamos um método chamado depositar, que quando invocado nos retorna uma mensagem (string) e o valor do novo salário (float64);
-
-// Em seguida, criamos o método transferir, que tira um valor de uma conta e transfere para uma conta destino reutilizando o método depositar;
-
-// Para finalizar, criamos um pacote chamado contas e criamos um arquivo chamado contaCorrente.go para manter todo código referente a este tipo de conta.

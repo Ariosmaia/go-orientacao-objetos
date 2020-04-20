@@ -1,9 +1,10 @@
 package contas
 
-// Propriedade em minusculo ele fica private
-// Maiusculo ele fica public
+import "banco/clientes"
+
+// Em GO não existe herança, existe composição
 type ContaCorrente struct {
-	Titular       string
+	Titular       clientes.Titular
 	NumeroAgencia int
 	NumeroConta   int
 	Saldo         float64
