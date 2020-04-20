@@ -9,7 +9,6 @@ type ContaCorrente struct {
 	saldo         float64
 }
 
-// * Para apontar para conta de quem estiver chamando
 func (c *ContaCorrente) Sacar(valorDosaque float64) string {
 	podeSacar := valorDosaque > 0 && valorDosaque <= c.saldo
 	if podeSacar {
@@ -20,15 +19,23 @@ func (c *ContaCorrente) Sacar(valorDosaque float64) string {
 	}
 }
 
+func (c *ContaCorrente) Depositar(valorDoDeposito float64) (string, float64) {
+	if valorDoDeposito > 0 {
+		c.saldo += valorDoDeposito
+		return "Deposito realizado com sucesso", c.saldo
+	} else {
+		return "Valor do deposito menor que zero", c.saldo
+	}
+}
+
 func main() {
 	contaDaSilvia := ContaCorrente{}
 	contaDaSilvia.titular = "Silvia"
 	contaDaSilvia.saldo = 500
 
 	fmt.Println(contaDaSilvia.saldo)
-
-	fmt.Println(contaDaSilvia.Sacar(200))
-	fmt.Println(contaDaSilvia.saldo)
+	status, valor := contaDaSilvia.Depositar(2000)
+	fmt.Println(status, valor)
 }
 
 // Nessa aula:
