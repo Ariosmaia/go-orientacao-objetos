@@ -30,3 +30,10 @@ func main() {
 	fmt.Println(contaDaSilvia.Sacar(200))
 	fmt.Println(contaDaSilvia.saldo)
 }
+
+// Nessa aula:
+// Criamos um nova conta corrente utilizando a palavra new;
+
+// Em seguida, comparamos os tipos criados comparando suas referências e entendemos o que são ponteiros na prática;
+
+// Para finalizar, desenvolvemos o método sacar que verifica se o valor do saque é maior do que zero e se a conta possui saldo.
