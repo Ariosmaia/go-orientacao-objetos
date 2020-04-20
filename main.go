@@ -27,3 +27,8 @@ func main() {
 
 	fmt.Println(contaDaLuisa.ObterSaldo())
 }
+
+// Nessa aula:
+// Criamos um novo tipo de conta: a ContaPoupança;
+
+// Para finalizar, criamos um novo tipo interface onde podemos utilizar tanto a conta corrente como poupança para pagar um boleto através da função Sacar.
