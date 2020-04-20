@@ -1,8 +1,9 @@
 package main
 
 import (
-	"banco/contas"
 	"fmt"
+
+	"github.com/ariosmaia/banco/contas"
 )
 
 func PagarBoleto(conta verificarConta, valorDoBoleto float64) {

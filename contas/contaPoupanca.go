@@ -1,6 +1,6 @@
 package contas
 
-import "banco/clientes"
+import "github.com/ariosmaia/banco/clientes"
 
 type ContaPoupanca struct {
 	Titular                              clientes.Titular
